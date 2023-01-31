@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod # type of k8s object
+metadata:
+  name: "goserver" # name of pod
+  labels: # labels are used to filter objects
+    app: "goserver"
+spec: # Pos specifications
+  containers:
+    - name: goserver
+      image: "matheusmallmann/hello-go:latest"
